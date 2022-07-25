@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section h2 {
+  font-size: 40px;
+  margin: 60px 0px;
+  text-align: center;
+}
+section .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .container .card {
+  width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+section .container .card:hover .head, section .container .card:focus .head {
+  transform: translateY(-30px);
+}
+section .container .card:hover .body, section .container .card:focus .body {
+  transform: translateY(0px);
+}
+section .container .card .head {
+  width: 100% !important;
+  background-color: #eee;
+  transform: translateY(0px);
+  display: flex;
+  border-bottom: 1px solid black;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  transition: all 0.3s ease;
+}
+section .container .card .head i {
+  font-size: 70px;
+}
+section .container .card .head1 {
+  color: #fc3200;
+}
+section .container .card .head2 {
+  color: #254BDD;
+}
+section .container .card .head3 {
+  color: #EFD81D;
+}
+section .container .card .head3 i {
+  background: black;
+}
+section .container .card .body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-30px);
+  width: 100% !important;
+  background-color: #eee;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  font-size: 25px;
+}
+section .container .card .body button {
+  margin: 20px;
+  padding: 15px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: #eee;
+}
+section .container .card .name {
+  width: 100%;
+  transform: translateY(-14px);
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+section .container .card .name1 {
+  color: #ff3300;
+}
+section .container .card .name2 {
+  color: #254BDD;
+}
+section .container .card .name3 {
+  color: #EFD81D;
+}
+
+@media screen and (max-width: 1220px) {
+  .container {
+    flex-direction: column;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(34, 34, 34);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}/*# sourceMappingURL=style.css.map */
